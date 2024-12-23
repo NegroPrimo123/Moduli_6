@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Monster Battle" Height="600" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel>
+                <TextBlock Text="Дата сражения (ДД:ММ:ГГГГ)" />
+                <TextBox x:Name="BattleDateTextBox" />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Максимальное НР" />
+                <TextBox x:Name="MaxHealthTextBox" />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Уровень атаки" />
+                <TextBox x:Name="AttackLevelTextBox" />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Начальное число денег" />
+                <TextBox x:Name="InitialMoneyTextBox" />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Стоимость лечения" />
+                <TextBox x:Name="HealingCostTextBox" />
+            </StackPanel>
+            <Button Content="Создать персонажа" Click="OnCreateCharacterClick" />
+            <TextBlock Text="Монстры:" Margin="0,10,0,0" />
+            <ListBox x:Name="MonstersListBox" />
+            <Button Content="Добавить монстра" Click="OnAddMonsterClick" />
+            <Button Content="Сбросить" Click="OnResetClick" />
+            <Button Content="Начать битву" Click="OnStartBattleClick" />
+        </StackPanel>
+    </Grid>
+</Window>
